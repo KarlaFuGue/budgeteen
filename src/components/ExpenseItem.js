@@ -1,9 +1,5 @@
 import React, { useContext } from "react";
 import { ImBin } from "react-icons/im";
-<<<<<<< HEAD
-=======
-import { BsFillTrashFill } from "react-icons/bs";
->>>>>>> 299b5d8e6c688d1e0c06e1a21a49de3e238b1d04
 import { AppContext } from "../context/AppContext";
 
 const ExpenseItem = (props) => {

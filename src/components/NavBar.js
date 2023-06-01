@@ -1,9 +1,5 @@
 import React from "react";
 import { useRef } from "react";
-<<<<<<< HEAD
-=======
-//import logo from "../images/resource-logo.png";
->>>>>>> 299b5d8e6c688d1e0c06e1a21a49de3e238b1d04
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import About from "./About";
 // import Balance from "./Balance";
@@ -23,14 +19,7 @@ function NavBar() {
             <div className="container">
               <div className="navbar-brand">
                 <a className="navbar-item">
-<<<<<<< HEAD
-                  <img
-                    src="budgeting/src/images/resource-logo.png"
-                    alt="Logo"
-                  />
-=======
                   <img src={require("../images/resource-logo.png")} alt="" />
->>>>>>> 299b5d8e6c688d1e0c06e1a21a49de3e238b1d04
                 </a>
                 <span className="navbar-burger" data-target="navbarMenuHeroB">
                   <span></span>
