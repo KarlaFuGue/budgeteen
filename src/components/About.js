@@ -27,7 +27,7 @@ const About = () => {
           <div className="tile is-parent is-8">
             <article className="tile is-child box">
               <div className="content">
-                <figure className="image is-8by6">
+                <figure className="image">
                   <img src={require("../images/image1.png")} alt="" />
                 </figure>
               </div>

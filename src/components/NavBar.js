@@ -13,9 +13,9 @@ function NavBar() {
   //};
   return (
     <header>
-      <section className="hero is-info is-large mt-4">
+      <section className="hero is-large mt-4">
         <div className="hero-head">
-          <nav className="navbar">
+          <nav className="navbar is-transparent">
             <div className="container">
               <div className="navbar-brand">
                 <a className="navbar-item">
@@ -54,8 +54,7 @@ function NavBar() {
         </div>
         <div className="hero-body">
           <div className="container has-text-centered">
-            <p className="title">Title</p>
-            <p className="subtitle">Subtitle</p>
+            <h3>Random Text</h3>
           </div>
         </div>
       </section>
