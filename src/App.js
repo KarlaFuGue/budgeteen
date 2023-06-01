@@ -12,6 +12,7 @@ import { AppProvider } from "./context/AppContext";
 import About from "./components/About";
 import Section from "./components/Mortgage";
 import Services from "./components/ServicesAndFooter";
+import DoughnutJS from "./components/DoughnutChart";
 
 const App = () => {
   return (
@@ -48,6 +49,9 @@ const App = () => {
           <div className="col-sm">
             <ExpenseForm />
           </div>
+        </div>
+        <div className="col-sm">
+          <DoughnutJS />
         </div>
       </div>
       <div className="container">
