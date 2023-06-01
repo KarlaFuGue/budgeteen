@@ -1,5 +1,6 @@
 import React from "react";
 import { useRef } from "react";
+//import logo from "../images/resource-logo.png";
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import About from "./About";
 // import Balance from "./Balance";
@@ -19,10 +20,7 @@ function NavBar() {
             <div className="container">
               <div className="navbar-brand">
                 <a className="navbar-item">
-                  <img
-                    src="budgeting/src/images/resource-logo.png"
-                    alt="Logo"
-                  />
+                  <img src={require("../images/resource-logo.png")} alt="" />
                 </a>
                 <span className="navbar-burger" data-target="navbarMenuHeroB">
                   <span></span>

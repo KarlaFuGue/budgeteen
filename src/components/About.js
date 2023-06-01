@@ -26,10 +26,9 @@ const About = () => {
         <div className="tile is-ancestor mb-3">
           <div className="tile is-parent is-8">
             <article className="tile is-child box">
-              <p className="title">I</p>
               <div className="content">
                 <figure className="image is-8by6">
-                  <img src="budgeting/src/images/image1.png" />
+                  <img src={require("../images/image1.png")} alt="" />
                 </figure>
               </div>
             </article>
