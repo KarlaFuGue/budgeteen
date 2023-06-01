@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="container">
+    <div className="container" id="about">
       <h2 className="title is-3 mt-4 has-text-centered">About</h2>
       <div className="block has-text-centered">
         I NEED <strong>HELP!</strong>

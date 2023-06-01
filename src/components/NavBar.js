@@ -29,10 +29,10 @@ function NavBar() {
               </div>
               <div id="navbarMenuHeroB" className="navbar-menu" ref={navRef}>
                 <div className="navbar-end">
-                  <a className="navbar-item is-active" href="/About">
+                  <a className="navbar-item is-active" href="#about">
                     About
                   </a>
-                  <a className="navbar-item is-active" href="/Balance">
+                  <a className="navbar-item is-active" href="#Tracker">
                     Expenses Tracker
                   </a>
                   <a className="navbar-item is-active" href="/Mortgage">

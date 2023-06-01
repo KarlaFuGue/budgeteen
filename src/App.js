@@ -23,7 +23,9 @@ const App = () => {
         <About />
       </div>
       <div className="container">
-        <h1 className="mt-3">My Expenses Tracker</h1>
+        <h1 className="mt-3" id="Tracker">
+          My Expenses Tracker
+        </h1>
         <div className="row mt-3">
           <div className="col-sm">
             <Balance />
