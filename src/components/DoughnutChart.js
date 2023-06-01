@@ -18,10 +18,32 @@ function DoughnutJS() {
 
   const options = {};
 
+  const textCenter = {
+    id: "textCenter",
+    beforeDatasetsDraw(chart, args, pluginOptions) {
+      const { ctx, data } = chart;
+
+      ctx.save();
+      ctx.font = "bolder 30px sans-serif";
+      ctx.fillStyle = "red";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText(
+        "Budget: £2500",
+        chart.getDatasetMeta(0).data[0].x,
+        chart.getDatasetMeta(0).data[0].y
+      );
+    },
+  };
+
   return (
     <div className="Chart col-sm">
       <div style={{ width: "35%", height: "35%", margin: "auto" }}>
-        <Doughnut data={data} options={options}></Doughnut>
+        <Doughnut
+          data={data}
+          options={options}
+          plugins={[textCenter]}
+        ></Doughnut>
       </div>
     </div>
   );
