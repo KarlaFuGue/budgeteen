@@ -9,7 +9,7 @@ function DoughnutJS() {
     datasets: [
       {
         label: "Pool",
-        data: [3, 4],
+        data: [6, 4],
         backgroundColor: ["black", "red"],
         borderColor: ["black", "red"],
       },
