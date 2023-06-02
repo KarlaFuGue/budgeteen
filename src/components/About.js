@@ -4,12 +4,17 @@ const About = () => {
   return (
     <div className="container" id="about">
       <h2 className="title is-3 mt-4 has-text-centered">About</h2>
-      <div className="block has-text-centered">
+      <figure>
+        <img src="https://bulma.io/images/placeholders/256x256.png" />
+        <img src="https://bulma.io/images/placeholders/256x256.png" />
+        <figcaption>Figure 1: Some beautiful placeholders</figcaption>
+      </figure>
+      {/* <div className="block has-text-centered">
         I NEED <strong>HELP!</strong>
       </div>
       <div className="block has-text-centered">
         I'TS TIME TO BECOME AN <strong>ADULT!</strong>
-      </div>
+      </div> */}
       <div className="block has-text-centered mb-5">
         We all get to a point in our lives where we need to take{" "}
         <strong>responsability</strong> for our <strong>finances</strong>.
