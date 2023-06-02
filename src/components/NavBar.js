@@ -30,13 +30,13 @@ function NavBar() {
               <div id="navbarMenuHeroB" className="navbar-menu" ref={navRef}>
                 <div className="navbar-end">
                   <a className="navbar-item is-active" href="#about">
-                    About
+                    <strong>About</strong>
                   </a>
                   <a className="navbar-item is-active" href="#Tracker">
-                    Expenses Tracker
+                    <strong>Expenses Tracker</strong>
                   </a>
                   <a className="navbar-item is-active" href="/Mortgage">
-                    Mortgage
+                    <strong>Mortgage</strong>
                   </a>
                   <span className="navbar-item">
                     <a className="button is-info is-inverted">
@@ -54,7 +54,14 @@ function NavBar() {
         </div>
         <div className="hero-body">
           <div className="container has-text-centered">
-            <h3>Random Text</h3>
+            <div class="bulma-overlay-mixin-parent">
+              <div class="bulma-overlay-mixin">
+                Overlay element
+                <figure className="overlay-item">
+                  <image src={require("../images/company-logo.png")} />
+                </figure>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -25,13 +25,13 @@ const About = () => {
       <div className="container">
         <div className="tile is-ancestor mb-3">
           <div className="tile is-parent is-8">
-            <article className="tile is-child box">
-              <div className="content">
-                <figure className="image">
-                  <img src={require("../images/image1.png")} alt="" />
-                </figure>
-              </div>
-            </article>
+            {/* <article className="tile is-child box"> */}
+            {/* //<div className="content"> */}
+            <figure className="image">
+              <img src={require("../images/image1.png")} alt="" />
+            </figure>
+            {/* //</div> */}
+            {/* </article> */}
           </div>
           <div className="tile is-parent">
             <article className="tile is-child box">

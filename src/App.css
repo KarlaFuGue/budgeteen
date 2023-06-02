@@ -1,8 +1,18 @@
 .bulma-overlay-mixin {
   @include overlay(1.5rem);
-  background-color: darkorange;
+  background-color: black;
   border-radius: 0.25em;
   color: white;
-  opacity: 0.5;
+  opacity: 1;
   padding: 1em;
+}
+
+.hero {
+  /*background-color: pink;*/
+  background-image: url(../src/images/just-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  opacity: 0.8;
 }
