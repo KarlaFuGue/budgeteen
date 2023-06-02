@@ -15,9 +15,9 @@ function NavBar() {
     <header>
       <section className="hero is-large ">
         <div className="hero-head">
-          <nav className="navbar is-transparent">
-            <div className="container">
-              <div className="navbar-brand">
+          <nav className=" wrapper navbar is-transparent">
+            <div>
+              {/* <div className="navbar-brand">
                 <a className="navbar-item">
                   <img src={require("../images/resource-logo.png")} alt="" />
                 </a>
@@ -26,9 +26,9 @@ function NavBar() {
                   <span></span>
                   <span></span>
                 </span>
-              </div>
+              </div> */}
               <div id="navbarMenuHeroB" className="navbar-menu" ref={navRef}>
-                <div className="navbar-end">
+                <div className="navbar is-align-items-flex-end">
                   <a className="navbar-item is-active" href="#about">
                     <strong>About</strong>
                   </a>
@@ -38,14 +38,11 @@ function NavBar() {
                   <a className="navbar-item is-active" href="/Mortgage">
                     <strong>Mortgage</strong>
                   </a>
-                  <span className="navbar-item">
-                    <a className="button is-info is-inverted">
-                      <span className="icon">
-                        <i className="fab fa-github"></i>
-                      </span>
-                      <span>More</span>
-                    </a>
-                  </span>
+                  <div className="navbar-item">
+                    <span>
+                      <button>Contact</button>
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>

@@ -23,4 +23,20 @@ html {
   display: flex;
   opacity: 0.8;
   margin-top: 20px;
+  width: 97%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* .container {
+  width: 10000px !important;
+} */
+
+.wrapper {
+  padding-top: 10px;
+  width: 97%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }

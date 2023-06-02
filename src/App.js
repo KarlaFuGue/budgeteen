@@ -17,7 +17,7 @@ import DoughnutJS from "./components/DoughnutChart";
 const App = () => {
   return (
     <AppProvider>
-      <div className="container">
+      <div>
         <NavBar />
       </div>
       <div className="container">
