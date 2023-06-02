@@ -13,7 +13,7 @@ function NavBar() {
   //};
   return (
     <header>
-      <section className="hero is-large mt-4">
+      <section className="hero is-large ">
         <div className="hero-head">
           <nav className="navbar is-transparent">
             <div className="container">
