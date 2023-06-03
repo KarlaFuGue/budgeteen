@@ -5,7 +5,7 @@ const Remaining = () => {
   const { expenses, budget } = useContext(AppContext);
 
   const totalExpenses = expenses.reduce((total, item) => {
-    return (total = total + item.amount);
+    return (total += item.amount);
   }, 0);
 
   const alertType = totalExpenses > budget ? "alert-danger" : "alert-success";

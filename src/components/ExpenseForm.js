@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { AppContext } from "../context/AppContext";
 import { v4 as uuidv4 } from "uuid";
 
-const ExpenseForm = () => {
+const ExpenseForm = (props) => {
   const { dispatch } = useContext(AppContext);
 
   const [name, setName] = useState("");
@@ -13,7 +13,7 @@ const ExpenseForm = () => {
 
     const expense = {
       id: uuidv4(),
-      name: name,
+      name,
       amount: parseInt(amount),
     };
 
@@ -21,6 +21,8 @@ const ExpenseForm = () => {
       type: "ADD_EXPENSE",
       payload: expense,
     });
+    setName("");
+    setAmount("");
   };
 
   return (
@@ -41,7 +43,7 @@ const ExpenseForm = () => {
           <label htmlFor="amount">Amount</label>
           <input
             required="required"
-            type="text"
+            type="number"
             className="form-control"
             id="amount"
             value={amount}

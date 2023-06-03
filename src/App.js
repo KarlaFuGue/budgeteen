@@ -2,13 +2,15 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bulma/css/bulma.min.css";
 import "./App.css";
+
+import { AppProvider } from "./context/AppContext";
 import Balance from "./components/Balance";
-import Remaining from "./components/Remaining";
 import ExpensesTotal from "./components/ExpensesTotal";
 import ExpensesList from "./components/ExpensesList";
 import ExpenseForm from "./components/ExpenseForm";
+import Remaining from "./components/Remaining";
+
 import NavBar from "./components/NavBar";
-import { AppProvider } from "./context/AppContext";
 import About from "./components/About";
 import Section from "./components/Mortgage";
 import Services from "./components/ServicesAndFooter";

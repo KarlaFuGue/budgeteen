@@ -1,7 +1,8 @@
 import React, { createContext, useReducer } from "react";
+import { v4 as uuidv4 } from "uuid";
 
-//4th step: return state depending on the action
-const AppReducer = (state, action) => {
+//5th step: return state depending on the action
+export const AppReducer = (state, action) => {
   switch (action.type) {
     case "ADD_EXPENSE":
       return {
@@ -15,6 +16,11 @@ const AppReducer = (state, action) => {
           (expense) => expense.id !== action.payload
         ),
       };
+    case "SET_BUDGET":
+      return {
+        ...state,
+        budget: action.payload,
+      };
     default:
       return state;
   }
@@ -24,9 +30,8 @@ const AppReducer = (state, action) => {
 const initialState = {
   budget: 1500,
   expenses: [
-    { id: 12, name: "shopping", amount: 50 },
-    { id: 11, name: "insurance", amount: 100 },
-    { id: 10, name: "groceries", amount: 150 },
+    { id: uuidv4(), name: "Fuel", amount: 120 },
+    { id: uuidv4(), name: "Insurance", amount: 120 },
   ],
 };
 
@@ -35,13 +40,14 @@ export const AppContext = createContext();
 
 //3rd part: Create a provider
 export const AppProvider = (props) => {
+  //4th part: return the state and the dispatch
   const [state, dispatch] = useReducer(AppReducer, initialState);
-
+  //5th part: Return context. Pass the values that we want to see
   return (
     <AppContext.Provider
       value={{
-        budget: state.budget,
         expenses: state.expenses,
+        balance: state.budget,
         dispatch,
       }}
     >
