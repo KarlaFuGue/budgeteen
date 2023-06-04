@@ -1,8 +1,8 @@
 body {
-  background-color: #000000;
+  background-color: #a3a3a3;
 }
 html {
-  background-color: #000000;
+  background-color: #c4c3c3;
 }
 
 .bulma-overlay-mixin {
@@ -39,4 +39,19 @@ html {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+/* Budget input  */
+.input-size {
+  text-align: center;
+  border-radius: 500px;
+}
+.budget-input {
+  display: flex;
+  /* justify-content: center; */
+  gap: 5rem;
+}
+.input-value {
+  font-size: 20px;
+  font-weight: bolder;
 }
