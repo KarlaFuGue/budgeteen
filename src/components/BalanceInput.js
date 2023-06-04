@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const BalanceInput = (props) => {
-  const [value, setValue] = useState(props.budget);
+  const [value, setValue] = useState(props.balance);
   return (
     <>
       <input

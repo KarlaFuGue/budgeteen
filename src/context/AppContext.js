@@ -16,11 +16,12 @@ export const AppReducer = (state, action) => {
           (expense) => expense.id !== action.payload
         ),
       };
-    case "SET_BUDGET":
+    case "SET_BALANCE":
       return {
         ...state,
-        budget: action.payload,
+        balance: action.payload,
       };
+
     default:
       return state;
   }
@@ -28,7 +29,7 @@ export const AppReducer = (state, action) => {
 
 //1st part: Initial state
 const initialState = {
-  budget: 1500,
+  balance: 1500,
   expenses: [
     { id: uuidv4(), name: "Fuel", amount: 120 },
     { id: uuidv4(), name: "Insurance", amount: 120 },
@@ -47,7 +48,7 @@ export const AppProvider = (props) => {
     <AppContext.Provider
       value={{
         expenses: state.expenses,
-        balance: state.budget,
+        balance: state.balance,
         dispatch,
       }}
     >

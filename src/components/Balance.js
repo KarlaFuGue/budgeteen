@@ -4,7 +4,7 @@ import BalanceInput from "./BalanceInput";
 import { AppContext } from "../context/AppContext";
 
 const Balance = () => {
-  const { budget, dispatch } = useContext(AppContext);
+  const { balance, dispatch } = useContext(AppContext);
   const [isEditing, setIsEditing] = useState(false);
 
   const handleEditClick = () => {
@@ -13,7 +13,7 @@ const Balance = () => {
 
   const handleSaveClick = (value) => {
     dispatch({
-      type: "SET_BUDGET",
+      type: "SET_BALANCE",
       payload: value,
     });
     setIsEditing(false);
@@ -22,9 +22,9 @@ const Balance = () => {
   return (
     <div className="alert alert-secondary">
       {isEditing ? (
-        <BalanceInput handleSaveClick={handleSaveClick} budget={budget} />
+        <BalanceInput handleSaveClick={handleSaveClick} balance={balance} />
       ) : (
-        <BalanceButton handleEditClick={handleEditClick} budget={budget} />
+        <BalanceButton handleEditClick={handleEditClick} balance={balance} />
       )}
     </div>
   );
