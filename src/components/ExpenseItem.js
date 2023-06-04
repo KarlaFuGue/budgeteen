@@ -16,7 +16,7 @@ const ExpenseItem = (props) => {
     <li className="list-group-item d-flex justify-content-between align-items-center">
       {props.name}
       <div>
-        <span className="badge badge-dark mr-3">£{props.amount}</span>
+        <span className="mr-3">£{props.amount}</span>
         <ImBin size="1.2em" onClick={handleDeleteExpense}></ImBin>
       </div>
     </li>
