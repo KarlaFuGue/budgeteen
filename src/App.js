@@ -22,7 +22,7 @@ const App = () => {
       <div>
         <NavBar />
       </div>
-      <div className="container">
+      <div className="container-about">
         <About />
       </div>
       <div className="container">
