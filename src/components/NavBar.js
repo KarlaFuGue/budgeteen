@@ -6,13 +6,14 @@ import { useRef } from "react";
 // import Mortgage from "./Mortgage";
 
 function NavBar() {
+  const logo = require("../images/company-logo.png");
   const navRef = useRef();
 
   // const showNavbar = () => {
   //   navRef.current.classList.toggle("show");
   //};
   return (
-    <header>
+    <header className="header">
       <section className="hero is-large ">
         <div className="hero-head">
           <nav className=" wrapper navbar is-transparent">
@@ -51,14 +52,7 @@ function NavBar() {
         </div>
         <div className="hero-body">
           <div className="container has-text-centered">
-            <div class="bulma-overlay-mixin-parent">
-              <div class="bulma-overlay-mixin">
-                Overlay element
-                <figure className="overlay-item">
-                  <image src={require("../images/company-logo.png")} />
-                </figure>
-              </div>
-            </div>
+            <img className="comapny-img" src={logo} />
           </div>
         </div>
       </section>
