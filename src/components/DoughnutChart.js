@@ -1,18 +1,29 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
+import { AppContext } from "../context/AppContext";
+import totalExpenses from "./ExpensesTotal";
+import BalanceInput from "./BalanceInput";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-function DoughnutJS() {
+function DoughnutJS(props) {
+  const { expenses, balance } = useContext(AppContext);
+
+  const totalExpenses = expenses.reduce((total, item) => {
+    return (total += item.amount);
+  }, 0);
+
+  const test = balance - totalExpenses;
+
   const data = {
     labels: ["Remaining", "Spent so far"],
     datasets: [
       {
         label: "Pool",
-        data: [6, 4],
-        backgroundColor: ["black", "red"],
-        borderColor: ["black", "red"],
+        data: [totalExpenses.toString(), test.toString()],
+        backgroundColor: ["red", "blue"],
+        borderColor: ["red", "blue"],
       },
     ],
   };
@@ -30,7 +41,7 @@ function DoughnutJS() {
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
       ctx.fillText(
-        "Budget: £2500",
+        "",
         chart.getDatasetMeta(0).data[0].x,
         chart.getDatasetMeta(0).data[0].y
       );
