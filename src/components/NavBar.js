@@ -30,20 +30,18 @@ function NavBar() {
               </div> */}
               <div id="navbarMenuHeroB" className="navbar-menu" ref={navRef}>
                 <div className="navbar is-align-items-flex-end">
+                  <a className="navbar-item is-active" href="#navbarMenuHeroB">
+                    <strong>Home</strong>
+                  </a>
                   <a className="navbar-item is-active" href="#about">
                     <strong>About</strong>
                   </a>
                   <a className="navbar-item is-active" href="#Tracker">
                     <strong>Expenses Tracker</strong>
                   </a>
-                  <a className="navbar-item is-active" href="/Mortgage">
-                    <strong>Mortgage</strong>
+                  <a className="navbar-item is-active" href="#Contact">
+                    <strong>Contact</strong>
                   </a>
-                  <div className="navbar-item">
-                    <span>
-                      <button>Contact</button>
-                    </span>
-                  </div>
                 </div>
               </div>
             </div>

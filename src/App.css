@@ -1,6 +1,7 @@
 body {
   /* background-color: #a3a3a3; */
   background-color: #000;
+  font-size: 1.5rem;
 }
 html {
   /* background-color: #c4c3c3; */
@@ -15,6 +16,30 @@ html {
   opacity: 1;
   padding: 1em;
 }
+
+/* NAVBAR - START */
+.navbar {
+  margin: auto;
+}
+
+.navbar-item {
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+a:link {
+  color: #ebe710;
+}
+a:link:hover {
+  color: #ebe710;
+}
+
+.navbar-menu {
+  background-color: #00000052;
+  border-radius: 100px;
+  padding: 0 5rem 0 5rem;
+}
+/* NAVBAR - FINISH */
 
 .hero {
   /*background-color: pink;*/
@@ -39,9 +64,35 @@ html {
   width: 97%;
   margin: auto;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
+
+.comapny-img {
+  width: 50%;
+  height: 100%;
+}
+
+/* ABOUT - START */
+
+.tittle {
+  width: 15rem;
+  margin: auto;
+  font-size: 3rem;
+  border-radius: 100px;
+  margin-bottom: 2rem;
+}
+
+.aboutSection {
+  background-color: #ebe710;
+  padding: 3rem 1rem 3rem 1rem;
+}
+
+.about-margin {
+  margin: auto;
+}
+
+/* ABOUT - FINISH */
 
 /* Budget input  */
 .input-size {
@@ -60,18 +111,13 @@ html {
 
 /* Comany img */
 
-.comapny-img {
-  width: 50%;
-  height: 100%;
-}
-
 /* Expense trakcer CSS - START */
 
 .trackerCSS {
   /* For all elements inside the tarcer */
   background-color: #6a6d654f;
   padding: 0 3rem 7rem 3rem;
-  border-radius: 100px;
+  /* border-radius: 100px; */
 }
 .txt-center {
   text-align: center;
@@ -90,7 +136,7 @@ html {
 .trackerHeading {
   font-size: 5rem;
   font-weight: bold;
-  padding: 7rem 0 5rem 0;
+  padding: 5rem 0 5rem 0;
   color: #f14668;
 }
 
