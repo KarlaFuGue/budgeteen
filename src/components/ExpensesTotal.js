@@ -9,7 +9,7 @@ const ExpensesTotal = (props) => {
   }, 0);
 
   return (
-    <div className="alert alert-warning">
+    <div className="alert alert-warning spentTXT">
       <span>Spent: £{totalExpenses}</span>
     </div>
   );

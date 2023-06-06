@@ -20,7 +20,7 @@ const Balance = () => {
   };
 
   return (
-    <div className="alert alert-secondary">
+    <div className="alert alert-secondary balanceTXT">
       {isEditing ? (
         <BalanceInput handleSaveClick={handleSaveClick} balance={balance} />
       ) : (

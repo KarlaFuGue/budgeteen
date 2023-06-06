@@ -25,9 +25,9 @@ const App = () => {
       <div className="container-about">
         <About />
       </div>
-      <div className="container">
-        <h1 className="mt-3" id="Tracker">
-          My Expenses Tracker
+      <div className="container trackerCSS">
+        <h1 className="mt-3 trackerHeading" id="Tracker">
+          Expenses Tracker
         </h1>
         <div className="row mt-3">
           <div className="col-sm">
@@ -40,15 +40,17 @@ const App = () => {
             <ExpensesTotal />
           </div>
         </div>
-        <h3 className="mt-3">Expenses</h3>
-        <div className="row mt-3">
-          <div className="col-sm">
-            <ExpensesList />
+        <div className="expenseList-padding">
+          <h3 className="mt-3 expensesTXT">Expenses</h3>
+          <div className="row mt-3">
+            <div className="col-sm">
+              <ExpensesList />
+            </div>
           </div>
         </div>
-        <h3 className="mt-3">Add Expense Transaction</h3>
+        <h3 className="mt-3 transactionTXT">Add Expense Transaction</h3>
         <div className="row mt-3">
-          <div className="col-sm">
+          <div className="col-sm expenseForm-padding">
             <ExpenseForm />
           </div>
         </div>

@@ -25,7 +25,7 @@ html {
   display: flex;
   opacity: 0.8;
   width: 97%;
-  height: fit-content;
+  height: 50%;
   margin: auto;
   margin-top: 20px;
 }
@@ -61,6 +61,64 @@ html {
 /* Comany img */
 
 .comapny-img {
-  width: 100%;
+  width: 50%;
   height: 100%;
 }
+
+/* Expense trakcer CSS - START */
+
+.trackerCSS {
+  /* For all elements inside the tarcer */
+  background-color: #6a6d654f;
+  padding: 0 3rem 7rem 3rem;
+  border-radius: 100px;
+}
+.txt-center {
+  text-align: center;
+}
+
+.trackerHeading,
+.remainingTXT,
+.balanceTXT,
+.spentTXT,
+.expensesTXT,
+.transactionTXT {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.trackerHeading {
+  font-size: 5rem;
+  font-weight: bold;
+  padding: 7rem 0 5rem 0;
+  color: #f14668;
+}
+
+.expensesTXT,
+.transactionTXT {
+  color: #f14668;
+}
+
+.expenseList-padding {
+  padding: 5rem 0 5rem 0;
+}
+
+.expenseForm-name,
+.expenseForm-amount {
+  color: #f14668;
+}
+.expenseForm-padding {
+  padding-bottom: 7rem;
+}
+
+.btn-addExpense {
+  border-radius: 100px;
+  padding: 2rem;
+  background-color: #ee06ee;
+}
+
+input {
+  width: 2re;
+}
+
+/* Expense trakcer CSS - END */

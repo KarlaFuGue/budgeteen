@@ -26,10 +26,12 @@ const ExpenseForm = (props) => {
   };
 
   return (
-    <form onSubmit={onSubmit}>
-      <div className="row">
+    <form onSubmit={onSubmit} className="txt-center">
+      <div className="row ">
         <div className="col-sm">
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name" className="expenseForm-name">
+            Name
+          </label>
           <input
             required="required"
             type="text"
@@ -39,19 +41,21 @@ const ExpenseForm = (props) => {
             onChange={(event) => setName(event.target.value)}
           ></input>
         </div>
-        <div className="col-sm">
-          <label htmlFor="amount">Amount</label>
-          <input
-            required="required"
-            type="number"
-            className="form-control"
-            id="amount"
-            value={amount}
-            onChange={(event) => setAmount(event.target.value)}
-          ></input>
-        </div>
+
+        <label htmlFor="amount" className="expenseForm-amount">
+          Amount
+        </label>
+        <input
+          required="required"
+          type="number"
+          className="form-control"
+          id="amount"
+          value={amount}
+          onChange={(event) => setAmount(event.target.value)}
+        ></input>
+
         <div className="col-sm mt-4">
-          <button type="submit" className="btn btn-dark">
+          <button type="submit" className="btn btn-dark btn-addExpense">
             Save
           </button>
         </div>
