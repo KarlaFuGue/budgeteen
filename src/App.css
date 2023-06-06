@@ -43,7 +43,7 @@ a:link:hover {
 
 .hero {
   /*background-color: pink;*/
-  background-image: url(../src/images/just-background.png);
+  background-image: url(src/images/budgeteen-background.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

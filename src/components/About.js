@@ -44,7 +44,7 @@ const About = () => {
             {/* <article className="tile is-child box"> */}
             {/* //<div className="content"> */}
             <figure className="image">
-              <img src={require("../images/image1.png")} alt="" />
+              <img src={require("../images/brain.png")} alt="" />
             </figure>
             {/* //</div> */}
             {/* </article> */}
