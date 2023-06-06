@@ -23,19 +23,23 @@ html {
 }
 
 .navbar-item {
-  font-size: 20px;
+  font-size: 1.6rem;
+  text-decoration: underline solid #fff;
   text-transform: uppercase;
   transition: 0.5s;
+  color: #ee06ee;
 }
+
 a:link {
-  color: #ebe710;
+  color: #ee06ee;
 }
+
 a:link:hover {
   color: #ebe710;
 }
 
 .navbar-menu {
-  background-color: #00000052;
+  background-color: #4b414152;
   border-radius: 100px;
   padding: 0 5rem 0 5rem;
 }
@@ -43,16 +47,12 @@ a:link:hover {
 
 .hero {
   /*background-color: pink;*/
-  background-image: url(src/images/budgeteen-background.png);
+  background-image: url(images/budgeteen-background.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
   opacity: 0.8;
-  width: 97%;
-  height: 50%;
-  margin: auto;
-  margin-top: 20px;
+  height: 100%;
 }
 
 /* .container {
@@ -60,8 +60,8 @@ a:link:hover {
 } */
 
 .wrapper {
-  padding-top: 10px;
-  width: 97%;
+  padding: 2rem 0 5rem 0;
+
   margin: auto;
   display: flex;
   justify-content: center;
@@ -79,19 +79,26 @@ a:link:hover {
   width: 15rem;
   margin: auto;
   font-size: 3rem;
-  border-radius: 100px;
-  margin-bottom: 2rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
 }
 
 .aboutSection {
   background-color: #ebe710;
-  padding: 3rem 1rem 3rem 1rem;
+  padding: 2rem 2rem 5rem 1rem;
 }
 
 .about-margin {
   margin: auto;
 }
 
+.imgFight,
+.image {
+  height: 60%;
+  width: 60%;
+  margin: auto;
+}
 /* ABOUT - FINISH */
 
 /* Budget input  */
@@ -141,7 +148,8 @@ a:link:hover {
 }
 
 .expensesTXT,
-.transactionTXT {
+.transactionTXT .expenseForm-name,
+.expenseForm-amount {
   color: #f14668;
 }
 
@@ -149,10 +157,6 @@ a:link:hover {
   padding: 5rem 0 5rem 0;
 }
 
-.expenseForm-name,
-.expenseForm-amount {
-  color: #f14668;
-}
 .expenseForm-padding {
   padding-bottom: 7rem;
 }
@@ -161,10 +165,6 @@ a:link:hover {
   border-radius: 100px;
   padding: 2rem;
   background-color: #ee06ee;
-}
-
-input {
-  width: 2re;
 }
 
 /* Expense trakcer CSS - END */

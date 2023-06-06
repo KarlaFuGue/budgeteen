@@ -6,7 +6,6 @@ import { useRef } from "react";
 // import Mortgage from "./Mortgage";
 
 function NavBar() {
-  const logo = require("../images/company-logo.png");
   const navRef = useRef();
 
   // const showNavbar = () => {
@@ -36,10 +35,10 @@ function NavBar() {
                   <a className="navbar-item is-active" href="#about">
                     <strong>About</strong>
                   </a>
-                  <a className="navbar-item is-active" href="#Tracker">
+                  <a className="navbar-item is-active color" href="#Tracker">
                     <strong>Expenses Tracker</strong>
                   </a>
-                  <a className="navbar-item is-active" href="#Contact">
+                  <a className="navbar-item is-active color" href="#Contact">
                     <strong>Contact</strong>
                   </a>
                 </div>
@@ -49,9 +48,7 @@ function NavBar() {
           {/* //<button onClick={showNavbar}></button> */}
         </div>
         <div className="hero-body">
-          <div className="container has-text-centered">
-            <img className="comapny-img" src={logo} />
-          </div>
+          {/* <div className="container has-text-centered"></div> */}
         </div>
       </section>
     </header>
