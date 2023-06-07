@@ -2,21 +2,21 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="container" id="about">
-      <div className="container">
+    <div className="container.is-max-width mgh-small" id="about">
+      <section className="section is-large p-5" id="firstSection">
         <div className="tile is-ancestor mt-6 mb-6">
-          <div className="tile is-parent is-6">
+          <div className="tile is-parent is-half">
             <figure className="image">
-              <img src={require("../images/help_nowr.png")} alt="" />
+              <img src={require("../images/comicimage1.png")} alt="" />
             </figure>
           </div>
           <div className="tile is-parent">
             <figure className="image">
-              <img src={require("../images/adult_time.png")} alt="" />
+              <img src={require("../images/comicimage2.png")} alt="" />
             </figure>
           </div>
         </div>
-      </div>
+      </section>
       {/* <div className="block has-text-centered">
         I NEED <strong>HELP!</strong>
       </div>

@@ -8,14 +8,14 @@ html {
   background-color: #000;
 }
 
-.bulma-overlay-mixin {
+/* .bulma-overlay-mixin {
   @include overlay(1.5rem);
   background-color: black;
   border-radius: 0.25em;
   color: white;
   opacity: 1;
   padding: 1em;
-}
+} */
 
 /* NAVBAR - START */
 .navbar {
@@ -43,12 +43,12 @@ a:link:hover {
 
 .hero {
   /*background-color: pink;*/
-  background-image: url(src/images/budgeteen-background.png);
+  background-image: url(/src/images/budgeteen-hero.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
-  opacity: 0.8;
+  /*opacity: 0.8;*/
   width: 97%;
   height: 50%;
   margin: auto;
@@ -168,3 +168,6 @@ input {
 }
 
 /* Expense trakcer CSS - END */
+#container-slogan {
+  padding: 4rem;
+}

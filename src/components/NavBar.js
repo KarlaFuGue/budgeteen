@@ -6,7 +6,7 @@ import { useRef } from "react";
 // import Mortgage from "./Mortgage";
 
 function NavBar() {
-  const logo = require("../images/company-logo.png");
+  // const logo = require("../images/company-logo.png");
   const navRef = useRef();
 
   // const showNavbar = () => {
@@ -49,11 +49,18 @@ function NavBar() {
           {/* //<button onClick={showNavbar}></button> */}
         </div>
         <div className="hero-body">
-          <div className="container has-text-centered">
+          {/* <div className="container has-text-centered">
             <img className="comapny-img" src={logo} />
-          </div>
+          </div> */}
         </div>
       </section>
+      <div className="container is-fluid">
+        <div className="notification is-primary" id="container-slogan">
+          <h5 className="has-text-centered">
+            Teaching you to take control of your dreams
+          </h5>
+        </div>
+      </div>
     </header>
   );
 }
