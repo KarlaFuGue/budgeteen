@@ -11,7 +11,7 @@ const Services = () => {
           <figure class="image is-128x128">
             <img
               class="is-rounded"
-              src="https://bulma.io/images/placeholders/128x128.png"
+              src={require("../images/personalised_strategies.png")}
             />
           </figure>
         </div>
@@ -19,16 +19,13 @@ const Services = () => {
           <figure class="image is-128x128">
             <img
               class="is-rounded"
-              src="https://bulma.io/images/placeholders/128x128.png"
+              src={require("../images/investment_consultation.png")}
             />
           </figure>
         </div>
         <div class="column">
           <figure class="image is-128x128">
-            <img
-              class="is-rounded"
-              src="https://bulma.io/images/placeholders/128x128.png"
-            />
+            <img class="is-rounded" src={require("../images/workshops.png")} />
           </figure>
         </div>
       </div>
