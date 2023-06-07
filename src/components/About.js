@@ -23,7 +23,7 @@ const About = () => {
       <div className="block has-text-centered">
         I'TS TIME TO BECOME AN <strong>ADULT!</strong>
       </div> */}
-      <div className="aboutSection ">
+      <div className="aboutSection container is-fluid">
         <h2 className="tittle is-2">About</h2>
         <p>
           No matter how old are you or how much many you have, if you dont know
@@ -36,7 +36,7 @@ const About = () => {
         </p>
         <p>We are here to help you understand where your money is going! </p>
       </div>
-      <div className="container">
+      <div className="">
         <img
           className="imgCenter"
           src={require("../images/_VS_(1).png")}

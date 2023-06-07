@@ -91,9 +91,9 @@ a:link:hover {
 
 .aboutSection {
   background-color: #ebe710;
-  padding: 2rem 10rem 5rem 10rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  padding: 2rem 20rem 5rem 20rem;
+  /* margin-left: 2rem;
+  margin-right: 2rem; */
 }
 
 .about-margin {
