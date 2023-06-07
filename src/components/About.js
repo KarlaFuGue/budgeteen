@@ -23,7 +23,7 @@ const About = () => {
       <div className="block has-text-centered">
         I'TS TIME TO BECOME AN <strong>ADULT!</strong>
       </div> */}
-      <div className="aboutSection">
+      <div className="aboutSection ">
         <h2 className="tittle is-2">About</h2>
         <p>
           No matter how old are you or how much many you have, if you dont know
