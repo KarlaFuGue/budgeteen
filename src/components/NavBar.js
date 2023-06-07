@@ -17,16 +17,13 @@ function NavBar() {
         <div className="hero-head">
           <nav className=" wrapper navbar is-transparent">
             <div>
-              {/* <div className="navbar-brand">
-                <a className="navbar-item">
-                  <img src={require("../images/resource-logo.png")} alt="" />
-                </a>
+              <div className="navbar-brand">
                 <span className="navbar-burger" data-target="navbarMenuHeroB">
                   <span></span>
                   <span></span>
                   <span></span>
                 </span>
-              </div> */}
+              </div>
               <div id="navbarMenuHeroB" className="navbar-menu" ref={navRef}>
                 <div className="navbar is-align-items-flex-end">
                   <a className="navbar-item is-active" href="#navbarMenuHeroB">
@@ -61,7 +58,26 @@ function NavBar() {
     </header>
   );
 }
+document.addEventListener("DOMContentLoaded", () => {
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(
+    document.querySelectorAll(".navbar-burger"),
+    0
+  );
 
+  // Add a click event on each of them
+  $navbarBurgers.forEach((el) => {
+    el.addEventListener("click", () => {
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle("is-active");
+      $target.classList.toggle("is-active");
+    });
+  });
+});
 // // const NavBar = () => {
 // //   return (
 // //     <Router>

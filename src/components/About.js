@@ -36,12 +36,10 @@ const About = () => {
         </p>
         <p>We are here to help you understand where your money is going! </p>
       </div>
-      <div className="">
-        <img
-          className="imgCenter"
-          src={require("../images/_VS_(1).png")}
-          alt=""
-        />
+      <div>
+        <figure class="image is-450x850">
+          <img src="src/images/_VS_(1).png" />
+        </figure>
       </div>
     </div>
   );
