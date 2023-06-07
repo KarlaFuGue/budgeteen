@@ -42,7 +42,7 @@ const About = () => {
             <figure className="image">
               <img
                 className="imgFight"
-                src={require("../images/neeedsvswants2.png")}
+                src={require("../images/_VS_(1).png")}
                 alt=""
               />
             </figure>
