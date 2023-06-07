@@ -34,20 +34,14 @@ const About = () => {
           <strong>finances</strong>, being prepared is better than being caught
           off guard.
         </p>
-        <p>We are here to help you understand where your many is going! </p>
+        <p>We are here to help you understand where your money is going! </p>
       </div>
       <div className="container">
-        <div className="tile is-ancestor mb-3">
-          <div className="container">
-            <figure className="image">
-              <img
-                className="imgFight"
-                src={require("../images/_VS_(1).png")}
-                alt=""
-              />
-            </figure>
-          </div>
-        </div>
+        <img
+          className="imgCenter"
+          src={require("../images/_VS_(1).png")}
+          alt=""
+        />
       </div>
     </div>
   );
@@ -55,7 +49,7 @@ const About = () => {
 
 export default About;
 
-// div className="tile is-parent is-8">
+// <div className="tile is-parent is-8">
 //             {/* <article className="tile is-child box"> */}
 //             {/* //<div className="content"> */}
 //             <figure className="image">

@@ -54,13 +54,13 @@ const App = () => {
             <ExpenseForm />
           </div>
         </div>
-        <div className="col-sm">
-          <DoughnutJS />
-        </div>
       </div>
-      <div className="container">
+      <div className="col-sm">
+        <DoughnutJS />
+      </div>
+      {/* <div className="container">
         <Section />
-      </div>
+      </div> */}
       <div className="container">
         <Services />
       </div>
