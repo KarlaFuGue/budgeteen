@@ -2,6 +2,7 @@ body {
   /* background-color: #a3a3a3; */
   background-color: #000;
   font-size: 1.5rem;
+  font-family: sans-serif;
 }
 html {
   /* background-color: #c4c3c3; */
@@ -27,7 +28,7 @@ html {
   text-decoration: underline solid #fff;
   text-transform: uppercase;
   transition: 0.5s;
-  color: #ee06ee;
+  color: #ff00ff;
 }
 
 a:link {
@@ -39,7 +40,7 @@ a:link:hover {
 }
 
 .navbar-menu {
-  background-color: #4b414152;
+  background-color: #12c7c791;
   border-radius: 100px;
   padding: 0 5rem 0 5rem;
 }
@@ -136,7 +137,11 @@ a:link:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 0 3rem 7rem 3rem;
+  padding: 3rem 10rem 3rem 10rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 5rem;
+
   /* border-radius: 100px; */
 }
 .txt-center {
@@ -176,12 +181,42 @@ a:link:hover {
 }
 
 .btn-addExpense {
-  border-radius: 100px;
-  padding: 2rem;
-  background-color: #ee06ee;
+  /* border-radius: 100px; */
+  padding: 1rem 3rem 1rem 3rem;
+  background-color: #eec306;
+  color: #000;
 }
 
 /* Expense trakcer CSS - END */
 #container-slogan {
   padding: 4rem;
+}
+
+/* Services & Footer  */
+
+.servicesColor {
+  color: #fff;
+  background-color: #f25c05;
+  width: 50%;
+
+  margin: 7rem auto 3rem auto;
+}
+
+.columnsMargin {
+  margin-top: 2rem;
+}
+
+.columnServices {
+  margin-top: 5rem;
+}
+
+.servicesTXT {
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.colFlex {
+  display: flex;
 }

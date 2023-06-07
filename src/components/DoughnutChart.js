@@ -20,10 +20,10 @@ function DoughnutJS(props) {
     labels: ["Remaining", "Spent so far"],
     datasets: [
       {
-        label: "Pool",
-        data: [totalExpenses.toString(), test.toString()],
-        backgroundColor: ["red", "blue"],
-        borderColor: ["red", "blue"],
+        label: "£",
+        data: [test.toString(), totalExpenses.toString()],
+        backgroundColor: ["#b7e70a", "#019587"],
+        borderColor: ["#b7e70a", "#019587"],
       },
     ],
   };
