@@ -19,16 +19,18 @@ const About = () => {
       </section>
       <div className="aboutSection container is-fluid">
         <h2 className="tittle is-2">About</h2>
-        <p>
+        <p className="has-text-centered">
           No matter how old are you or how much many you have, if you dont know
           how to manage it, you wont have it for long...
         </p>
-        <p>
+        <p className="has-text-centered">
           It's time to take <strong>responsability</strong> for your{" "}
           <strong>finances</strong>, being prepared is better than being caught
           off guard.
         </p>
-        <p>We are here to help you understand where your money is going! </p>
+        <p className="has-text-centered">
+          We are here to help you understand where your money is going!{" "}
+        </p>
       </div>
       <div>
         <div className="imageCenter">

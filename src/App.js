@@ -55,10 +55,8 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="columns">
-        <div class="column is-12">
-          <DoughnutJS />
-        </div>
+      <div className="container is-fluid">
+        <DoughnutJS />
       </div>
       {/* <div className="container">
         <Section />
