@@ -17,12 +17,6 @@ const About = () => {
           </div>
         </div>
       </section>
-      {/* <div className="block has-text-centered">
-        I NEED <strong>HELP!</strong>
-      </div>
-      <div className="block has-text-centered">
-        I'TS TIME TO BECOME AN <strong>ADULT!</strong>
-      </div> */}
       <div className="aboutSection container is-fluid">
         <h2 className="tittle is-2">About</h2>
         <p>
@@ -48,13 +42,3 @@ const About = () => {
 };
 
 export default About;
-
-// <div className="tile is-parent is-8">
-//             {/* <article className="tile is-child box"> */}
-//             {/* //<div className="content"> */}
-//             <figure className="image">
-//               <img src={require("../images/brain.png")} alt="" />
-//             </figure>
-//             {/* //</div> */}
-//             {/* </article> */}
-//           </div>

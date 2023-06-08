@@ -6,7 +6,7 @@ const BalanceButton = (props) => {
       <span>Balance: £{props.balance}</span>
       <button
         type="button"
-        className="btn btn-primary button-margin"
+        className="button is-focused ml-6"
         onClick={props.handleEditClick}
       >
         Reset
@@ -15,24 +15,4 @@ const BalanceButton = (props) => {
   );
 };
 
-// function BalanceButton() {
-//   const [value, setValue] = useState("");
-
-//   const handleChange = (event) => {
-//     setValue(event.target.value);
-//   };
-
-//   return (
-//     <div class="budget-input">
-//       <input
-//         class="input-size"
-//         type="text"
-//         value={value}
-//         onChange={handleChange}
-//         placeholder="What is your budget?"
-//       />
-//       <div class="input-value">{value !== "" ? `£${value}` : ""}</div>
-//     </div>
-//   );
-// }
 export default BalanceButton;
