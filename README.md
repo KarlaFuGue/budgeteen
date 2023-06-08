@@ -38,10 +38,13 @@ To use this app, run the following command (on the local server):
 
 - npm start
 
+https://github.com/KarlaFuGue/budgeteen/assets/125197097/19685e0a-527d-4507-a2a7-6e9fc0782573
+
+
 ## Contributors
 
-https://github.com/KarlaFuGue
-https://github.com/Daaanxx
+- https://github.com/KarlaFuGue
+- https://github.com/Daaanxx
 
 ## Technologies
 
