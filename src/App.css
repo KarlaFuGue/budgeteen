@@ -111,6 +111,10 @@ a:link:hover {
   width: 100%;
   margin: auto;
 }
+
+.imageCenter {
+  text-align: center;
+}
 /* ABOUT - FINISH */
 
 /* Budget input  */
@@ -134,17 +138,21 @@ a:link:hover {
 
 .trackerCSS {
   /* For all elements inside the tarcer */
-
   background-image: url(/src/images/PINK.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 3rem 10rem 3rem 10rem;
+  padding: 3rem 50rem 3rem 50rem;
   margin-left: 2rem;
   margin-right: 2rem;
   margin-bottom: 5rem;
 
   /* border-radius: 100px; */
+}
+
+.formInput {
+  width: 50%;
+  margin: 0 auto;
 }
 .txt-center {
   text-align: center;

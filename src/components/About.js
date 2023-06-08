@@ -37,9 +37,11 @@ const About = () => {
         <p>We are here to help you understand where your money is going! </p>
       </div>
       <div>
-        <figure class="image is-450x850">
-          <img src="src/images/_VS_(1).png" />
-        </figure>
+        <div className="imageCenter">
+          <figure class="imageVS is-450x850">
+            <img src={require("../images/_VS_(1).png")} />
+          </figure>
+        </div>
       </div>
     </div>
   );
