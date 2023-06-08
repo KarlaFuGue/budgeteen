@@ -55,8 +55,10 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="col-sm">
-        <DoughnutJS />
+      <div className="columns">
+        <div class="column is-12">
+          <DoughnutJS />
+        </div>
       </div>
       {/* <div className="container">
         <Section />
