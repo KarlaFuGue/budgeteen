@@ -38,42 +38,45 @@ const Services = () => {
         </div>
       </div>
       <footer className="footer has-background-grey-light">
-        <div className="column is-half">
-          <strong>
-            GET IN TOUCH
-            <a href="mailto:kxf221@bham.ac.uk">
-              <AiOutlineMail size="1.2em"></AiOutlineMail>
-            </a>
-          </strong>
-          <p>
-            Receive our leaflet with full decription and cost of our sevices
-          </p>
-        </div>
-        <div className="column is-half">
-          <strong>FOLLOW US</strong>
-          <nav class="level">
-            <div class="level-item has-text-centered">
-              <div>
-                <a href="https://www.facebook.com/unibirmingham/?locale=en_GB">
-                  <SiFacebook size="2rem"></SiFacebook>
-                </a>
+        <div className="columns">
+          <div className="column is-half has-text-centered mt-3">
+            <strong>
+              GET IN TOUCH
+              <a href="mailto:kxf221@bham.ac.uk">
+                <AiOutlineMail size="1.2em"></AiOutlineMail>
+              </a>
+            </strong>
+            <p className="sendEmail is-size-5">
+              Receive our leaflet with full decription
+            </p>
+            <p className="sendEmail is-size-5">and cost of our sevices</p>
+          </div>
+          <div className="column is-half has-text-centered mt-3">
+            <strong>FOLLOW US</strong>
+            <nav class="level">
+              <div class="level-item has-text-centered">
+                <div>
+                  <a href="https://www.facebook.com/unibirmingham/?locale=en_GB">
+                    <SiFacebook size="2rem"></SiFacebook>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="level-item has-text-centered">
-              <div>
-                <a href="https://www.instagram.com/unibirmingham/?hl=en">
-                  <GrInstagram size="2rem"></GrInstagram>
-                </a>
+              <div class="level-item has-text-centered">
+                <div>
+                  <a href="https://www.instagram.com/unibirmingham/?hl=en">
+                    <GrInstagram size="2rem"></GrInstagram>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="level-item has-text-centered">
-              <div>
-                <a href="https://twitter.com/unibirmingham?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-                  <BsTwitter size="2rem"></BsTwitter>
-                </a>
+              <div class="level-item has-text-centered">
+                <div>
+                  <a href="https://twitter.com/unibirmingham?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                    <BsTwitter size="2rem"></BsTwitter>
+                  </a>
+                </div>
               </div>
-            </div>
-          </nav>
+            </nav>
+          </div>
         </div>
       </footer>
     </section>
