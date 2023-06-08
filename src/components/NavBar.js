@@ -1,9 +1,5 @@
 import React from "react";
 import { useRef } from "react";
-// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-// import About from "./About";
-// import Balance from "./Balance";
-// import Mortgage from "./Mortgage";
 
 function NavBar() {
   const navRef = useRef();

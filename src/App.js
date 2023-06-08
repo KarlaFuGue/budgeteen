@@ -61,7 +61,7 @@ const App = () => {
       {/* <div className="container">
         <Section />
       </div> */}
-      <div className="container is-fluid">
+      <div className="container is-fluid" id="Contact">
         <Services />
       </div>
     </AppProvider>

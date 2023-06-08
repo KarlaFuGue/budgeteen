@@ -37,7 +37,7 @@ const Services = () => {
           <p className="servicesTXT">Workshops</p>
         </div>
       </div>
-      <footer className="footer has-background-grey-light">
+      <footer className="footer has-background-grey-light" id="Contact">
         <div className="columns">
           <div className="column is-half has-text-centered mt-3">
             <strong>
